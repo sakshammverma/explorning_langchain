@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 model = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
+
 result = model.invoke('Write on mouse in english')
 
 print(result.content)
